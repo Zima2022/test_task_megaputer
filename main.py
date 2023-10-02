@@ -61,7 +61,7 @@ def main() -> None:
                 data.extend([[*person, '', '']])
             browser.get('https://www.megaputer.ru/produkti/sertifikat/')
 
-    with open('result.csv', mode='w', encoding='utf-8', newline='') as file:
+    with open('results.csv', mode='w', encoding='utf-8', newline='') as file:
         writer = csv.writer(file)
         writer.writerows(data)
 
